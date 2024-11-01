@@ -156,23 +156,42 @@ h2 {
 
 .game-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
 }
 
-/* .game iframe {
-    float: right;
-    margin: 0 2rem;
- } */
+.game-controls {
+    grid-column: 2;
+}
 
-.game-images {
+.game-description {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.game-grid h3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.game-images-row-1 {
+    grid-row: 4;
+    max-width: 100%;
+}
+
+.game iframe {
+    width: 100%;
+ }
+
+/* .game-images {
     display: flex;
     gap: 1rem;
+    margin-right: 2rem;
 }
 
 .game-images img {
     max-width: 33%;
-}
+} */
 
 section#ruckus {
     background-color: black;
@@ -294,8 +313,8 @@ section#ruckus {
     }
 
     #skew-card-a {
-        transform: perspective(40rem) rotate(20deg) rotateY(45deg);
-        translate: 100px 100px;
+        transform: perspective(40rem) rotate(40deg) rotateY(45deg);
+        translate: 100px 50px;
         padding-left: 1rem;
         padding-right: 2rem;
         grid-column: 1;
@@ -304,8 +323,8 @@ section#ruckus {
     
     #skew-card-b {
         margin-top: 0;
-        transform: perspective(40rem) rotate(50deg) rotateY(45deg);
-        translate: -20px 0;
+        transform: perspective(40rem) rotate(65deg) rotateY(45deg);
+        translate: -20px -40px;
         padding-left: 1rem;
         padding-right: 2rem;
         grid-column: 2;
@@ -314,8 +333,8 @@ section#ruckus {
     
     #skew-card-c {
         margin-top: .5rem;
-        transform: perspective(40rem) rotate(80deg) rotateY(45deg);
-        translate: -80px -30px;
+        transform: perspective(40rem) rotate(85deg) rotateY(45deg);
+        translate: -100px -50px;
         padding-left: 1rem;
         padding-right: 2rem;
         grid-column: 3;
@@ -330,11 +349,12 @@ section#ruckus {
 
     #headshot {
         min-width: 3rem;
-        max-width: 16rem;
+        max-width: 14rem;
         display: block;
         margin-top: 3rem;
         margin: auto;
         float: right;
+        translate: -50px 0;
     }
     
     #left-c {
@@ -349,12 +369,15 @@ section#ruckus {
     }
 
     #my-name {
-        font-size: 3rem;
+        font-size: 1rem;
         margin: 1rem;
+        margin-right: 4rem;
     }
 
     #my-description {
-        font-size: 1rem;
+        font-size: .8rem;
         margin: 1rem;
+        margin-right: 4rem;
+
     }
   }
