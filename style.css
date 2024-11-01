@@ -160,15 +160,14 @@ h2 {
     gap: 1rem;
 }
 
-.game iframe {
+/* .game iframe {
     float: right;
     margin: 0 2rem;
- }
+ } */
 
 .game-images {
     display: flex;
     gap: 1rem;
-
 }
 
 .game-images img {
@@ -184,7 +183,64 @@ section#ruckus {
     background-color: black;
 }
 
-section#ruckus .ruckus-title
+.ruckus-logo {
+    margin: 2rem 0;
+}
+
+.ruckus-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.ruckus-featured {
+    grid-column: 0 / 1;
+}
+
+.ruckus-featured img {
+    max-width: 100%;
+}
+
+.ruckus-images {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.ruckus-event-posters img {
+    max-width: 30%;
+}
+
+.ruckus-event-posters img.white-border {
+    border: 2px solid white;
+}
+
+.ruckus-merchandise {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.ruckus-merchandise img {
+    max-width: 45%;
+}
+
+
+
+
+
+
+.about-me-container {
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
+.contact-container {
+    margin: 2rem;
+    margin-top: 4rem;
+}
+
 
 
 /* /////////////////// */
